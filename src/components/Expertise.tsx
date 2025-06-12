@@ -100,7 +100,7 @@ function Expertise() {
                 </div>
                 
                 <div className="skill">
-                    <img src={az104} alt="Avatar" className="skill-image" />
+                    <img src={az305} alt="Avatar" className="skill-image" />
                     <h3>Azure Solutions Architect Expert (AZ-305)</h3>
                     <p>Microsoft</p>
                     <div className="flex-chips">
