@@ -4,84 +4,125 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faReact, faDocker, faPython } from '@fortawesome/free-brands-svg-icons';
 import Chip from '@mui/material/Chip';
 import '../assets/styles/Expertise.scss';
+import ckaImage from '../assets/images/cka.png';
+import az900 from '../assets/images/az900.png'
+import az104 from '../assets/images/az104.png'
+import az305 from '../assets/images/az305.png'
+import tf003 from '../assets/images/tf003.png'
 
-const labelsFirst = [
-    "React",
-    "TypeScript",
-    "JavaScript",
-    "HTML5",
-    "CSS3",
-    "SASS",
-    "Flask",
-    "Python",
-    "SQL",
-    "PostgreSQL",
-    "Postman"
+const ckaTechStack = [
+  "K8s Admin",
+  "Pod Scheduling",
+  "Docker Lifecycle",
+  "Linux Troubleshooting",
+  "Shell Scripting",
+  "Git",
 ];
 
-const labelsSecond = [
-    "Git",
-    "GitHub Actions",
-    "Docker",
-    "AWS",
-    "Azure",
-    "Linux",
-    "Snowflake",
-    "Pandas",
-    "Selenium",
+const az900TechStack = [
+  "Azure Core Services",
+  "Cloud Concepts",
+  "RBAC & Policies",
+  "PowerShell Basics",
+  "ARM & Bicep Intro",
 ];
 
-const labelsThird = [
-    "OpenAI",
-    "Groq",
-    "LangChain",
-    "Qdrant",
-    "Hugging Face",
-    "LlamaIndex",
-    "Streamlit",
+const az104TechStack = [
+  "Azure VMs & VNets",
+  "Azure CLI & PowerShell",
+  "Azure AD & RBAC",
+  "Monitoring & Logs",
+  "IaC: Bicep & ARM",
+  "Azure DevOps",
+  "Linux in Azure",
 ];
+
+const az305TechStack = [
+  "Azure Architecture",
+  "HA & DR Planning",
+  "Security Design",
+  "Hybrid Networking",
+  "IaC: Terraform/Bicep",
+  "CI/CD with DevOps",
+];
+
+const tf003TechStack = [
+  "Terraform Modules",
+  "Azure & AWS Infra",
+  "IaC & GitOps",
+  "CI/CD with GitHub",
+  "Python Automation",
+  "Secrets Mgmt",
+];
+
+
 
 function Expertise() {
     return (
     <div className="container" id="expertise">
         <div className="skills-container">
-            <h1>Expertise</h1>
+            <h1>Certifications</h1>
             <div className="skills-grid">
                 <div className="skill">
-                    <FontAwesomeIcon icon={faReact} size="3x"/>
-                    <h3>Full Stack Web Development</h3>
-                    <p>I have built a diverse array of web applications from scratch using modern technologies such as React and Flask. I have a strong proficiency in the SDLC process and frontend + backend development.</p>
+                    <img src={ckaImage} alt="Avatar" className="skill-image" />
+                    <h3>Certified Kubernetes Administrator (CKA)</h3>
+                    <p>Linux Foundation and the Cloud Native Computing Foundation (CNCF)</p>
                     <div className="flex-chips">
                         <span className="chip-title">Tech stack:</span>
-                        {labelsFirst.map((label, index) => (
+                        {ckaTechStack.map((label, index) => (
                             <Chip key={index} className='chip' label={label} />
                         ))}
                     </div>
                 </div>
 
                 <div className="skill">
-                    <FontAwesomeIcon icon={faDocker} size="3x"/>
-                    <h3>DevOps & Automation</h3>
-                    <p>Once the application is built, I help clients set up DevOps testing, CI/CD pipelines, and deployment automation to support the successful Go-Live.</p>
+                    <img src={az900} alt="Avatar" className="skill-image" />
+                    <h3>Azure Fundamentals (AZ-900)</h3>
+                    <p>Microsoft</p>
                     <div className="flex-chips">
                         <span className="chip-title">Tech stack:</span>
-                        {labelsSecond.map((label, index) => (
+                        {az900TechStack.map((label, index) => (
                             <Chip key={index} className='chip' label={label} />
                         ))}
                     </div>
                 </div>
 
                 <div className="skill">
-                    <FontAwesomeIcon icon={faPython} size="3x"/>
-                    <h3>GenAI & LLM</h3>
-                    <p>Stay relevant in the market by leveraging the latest AI models in your projects. I have professional experience building enterprise grade GenAI-enabled solutions to empower intelligent decision making.</p>
+                    <img src={az104} alt="Avatar" className="skill-image" />
+                    <h3>Azure Administrator Associate (AZ-104)</h3>
+                    <p>Microsoft</p>
                     <div className="flex-chips">
                         <span className="chip-title">Tech stack:</span>
-                        {labelsThird.map((label, index) => (
+                        {az104TechStack.map((label, index) => (
                             <Chip key={index} className='chip' label={label} />
                         ))}
                     </div>
                 </div>
+                
+                <div className="skill">
+                    <img src={az104} alt="Avatar" className="skill-image" />
+                    <h3>Azure Solutions Architect Expert (AZ-305)</h3>
+                    <p>Microsoft</p>
+                    <div className="flex-chips">
+                        <span className="chip-title">Tech stack:</span>
+                        {az305TechStack.map((label, index) => (
+                            <Chip key={index} className='chip' label={label} />
+                        ))}
+                    </div>
+                </div>
+
+                <div className="skill">
+                    <img src={tf003} alt="Avatar" className="skill-image" />
+                    <h3>Terraform Associate (003)</h3>
+                    <p>HashiCorp</p>
+                    <div className="flex-chips">
+                        <span className="chip-title">Tech stack:</span>
+                        {tf003TechStack.map((label, index) => (
+                            <Chip key={index} className='chip' label={label} />
+                        ))}
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>

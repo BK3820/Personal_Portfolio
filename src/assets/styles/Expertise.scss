@@ -8,11 +8,18 @@
         color: white;
     }
 }
+
+.skill-image {
+    width: 300px; /* Set a fixed width for the avatar image */
+    height: 300px; /* Set a fixed height for the avatar image */
+    object-fit: contain; /* Ensure the image scales properly */
+    margin-bottom: 10px; /* Add spacing below the image */
+}
   
 .skills-container .skills-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 50px;
+    grid-gap: 30px;
 }
   
 .skills-container .skills-grid .skill {
@@ -75,11 +82,23 @@
         .skills-container .skills-grid .skill {
             padding-bottom: 5%;
         }
+
+        .skill-image,
+        .skills-container .skills-grid .skill svg {
+            width: 100px !important; /* Slightly smaller for mobile */
+            height: 100px !important;
+        }
     }
 
     @media (max-width: 567px) {
         .skills {
             font-size: 12px;
+        }
+
+        .skill-image,
+        .skills-container .skills-grid .skill svg {
+            width: 70px !important; /* Even smaller for very small screens */
+            height: 70px !important;
         }
     }
 }
