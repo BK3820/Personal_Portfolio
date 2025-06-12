@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Personal_Portfolio/static/css/main.aac8286d.css",
-    "main.js": "/Personal_Portfolio/static/js/main.cfcf6543.js",
+    "main.js": "/Personal_Portfolio/static/js/main.6fb87f70.js",
     "static/js/453.b05d8aa5.chunk.js": "/Personal_Portfolio/static/js/453.b05d8aa5.chunk.js",
     "static/media/image.png": "/Personal_Portfolio/static/media/image.719c60715ab3fc6f4db4.png",
     "static/media/bg-light.png": "/Personal_Portfolio/static/media/bg-light.bac0efb485244a522981.png",
@@ -10,17 +10,18 @@
     "static/media/archi-diag.png": "/Personal_Portfolio/static/media/archi-diag.06d1997bede689db6858.png",
     "static/media/cka.png": "/Personal_Portfolio/static/media/cka.e8cf8c9610d85766cda8.png",
     "static/media/jenkins-01.png": "/Personal_Portfolio/static/media/jenkins-01.3578eb6560bbb76681ea.png",
+    "static/media/az305.png": "/Personal_Portfolio/static/media/az305.7ca5d5d8cd346b7447b9.png",
     "static/media/az104.png": "/Personal_Portfolio/static/media/az104.0d9b1791359746c879d8.png",
     "static/media/az900.png": "/Personal_Portfolio/static/media/az900.4c16a436a090263d3f5d.png",
     "static/media/keyvault.png": "/Personal_Portfolio/static/media/keyvault.206ddeba7d7b8cb8fa0c.png",
     "static/media/tf003.png": "/Personal_Portfolio/static/media/tf003.273930bbfff7a136a382.png",
     "index.html": "/Personal_Portfolio/index.html",
     "main.aac8286d.css.map": "/Personal_Portfolio/static/css/main.aac8286d.css.map",
-    "main.cfcf6543.js.map": "/Personal_Portfolio/static/js/main.cfcf6543.js.map",
+    "main.6fb87f70.js.map": "/Personal_Portfolio/static/js/main.6fb87f70.js.map",
     "453.b05d8aa5.chunk.js.map": "/Personal_Portfolio/static/js/453.b05d8aa5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.aac8286d.css",
-    "static/js/main.cfcf6543.js"
+    "static/js/main.6fb87f70.js"
   ]
 }
